@@ -1,0 +1,55 @@
+{
+  "name": "ts-package-boilerplate",
+  "version": "0.1.0",
+  "description": "A minimist boilerplate for Typescript packages.",
+  "homepage": "https://github.com/poyea/ts-package-boilerplate#readme",
+  "author": "John Law <johnlaw@linux.com> (https://github.com/poyea/)",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poyea/ts-package-boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poyea/ts-package-boilerplate/issues"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "build": "npm test && tsc",
+    "version": "npm run lint && git add -A src && git push && git push --tags",
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
+    "test-cov": "nyc --reporter=text npm run test",
+    "test-cov:html": "nyc --reporter=text --reporter=html npm run test",
+    "lint": "tslint -c tslint.json '{test,src}/**/*.ts'",
+    "fmt": "prettier --config .prettierrc ./**/*.{js,jsx,ts,tsx} --write"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.5",
+    "chai": "^4.2.0",
+    "husky": "^4.2.5",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.1",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "keywords": [
+    "package",
+    "ts",
+    "typescript"
+  ]
+}

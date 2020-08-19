@@ -1,8 +1,8 @@
-# typescript-package-boilerplate
+# <p align="center">typescript-package-boilerplate
 
 ### To use
 ```
-git clone git@github.com:poyea/ts-package-boilerplate.git
+git clone git@github.com:poyea/typescript-package-boilerplate.git
 ```
 
 ### Equivalent setting

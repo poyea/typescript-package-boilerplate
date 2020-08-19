@@ -1,4 +1,4 @@
-# ts-package-boilerplate
+# typescript-package-boilerplate
 
 ### To use
 ```

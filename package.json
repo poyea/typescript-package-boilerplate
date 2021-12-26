@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A minimist boilerplate for Typescript packages.",
   "homepage": "https://github.com/poyea/ts-package-boilerplate#readme",
-  "author": "John Law <johnlaw@linux.com> (https://github.com/poyea/)",
+  "author": "John Law <poyea@pm.me> (https://github.com/poyea/)",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [

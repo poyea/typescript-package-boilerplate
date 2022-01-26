@@ -4,7 +4,7 @@
 Press the Green `Use this template` button on this respository page.
 
 ## Equivalent setting
-typescript + (ts-node + nodemon + ts-node) + (mocha + chai + nyc) + (tslint + prettier + tslint-config-prettier) + husky
+typescript + (ts-node + nodemon + ts-node) + (mocha + chai + nyc) + (eslint) + husky
 
 ## If you like this, please
 * Star

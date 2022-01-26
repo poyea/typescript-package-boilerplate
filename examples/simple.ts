@@ -1,3 +1,3 @@
-import echoThis from '../src/echo';
+import echoThis from "../src/echo";
 
-console.log(echoThis('This is just a very small example.'));
+console.log(echoThis("This is just a very small example."));

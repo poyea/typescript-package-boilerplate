@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
-    "build": "npm test && tsc",
+    "build": "tsc",
     "version": "npm run lint && git add -A src && git push && git push --tags",
     "test": "mocha -r ts-node/register test/**/*.test.ts",
     "test-cov": "nyc --reporter=text npm run test",

@@ -1,6 +1,6 @@
 {
   "name": "ts-package-boilerplate",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "A minimist boilerplate for Typescript packages.",
   "homepage": "https://github.com/poyea/ts-package-boilerplate#readme",
   "author": "John Law <poyea@pm.me> (https://github.com/poyea/)",

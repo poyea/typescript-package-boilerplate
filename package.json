@@ -25,27 +25,25 @@
     "test": "mocha -r ts-node/register test/**/*.test.ts",
     "test-cov": "nyc --reporter=text npm run test",
     "test-cov:html": "nyc --reporter=text --reporter=html npm run test",
-    "lint": "eslint . -c .eslintrc.json --ext .ts",
-    "fmt": "eslint . --fix -c .eslintrc.json --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "fmt": "eslint . --fix --ext .ts"
   },
   "devDependencies": {
     "@types/chai": "latest",
     "@types/mocha": "latest",
-    "@types/node": "latest",
-    "@typescript-eslint/eslint-plugin": "^5.10.1",
-    "@typescript-eslint/parser": "^5.10.1",
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
     "chai": "latest",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "husky": "^7.0.4",
+    "eslint": "^9.29.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "husky": "^9.1.7",
     "mocha": "latest",
     "nodemon": "latest",
     "nyc": "latest",
     "ts-node": "latest",
-    "typescript": "^4.5.5"
+    "typescript": "^5.8.3"
   },
   "directories": {
     "example": "examples",

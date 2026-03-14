@@ -18,13 +18,13 @@
     "url": "https://github.com/poyea/ts-package-boilerplate/issues"
   },
   "scripts": {
-    "prepare": "husky install",
-    "start": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "prepare": "husky",
+    "start": "nodemon --watch 'src/**/*.ts' --exec tsx src/index.ts",
     "build": "tsc",
     "version": "npm run lint && git add -A src && git push && git push --tags",
-    "test": "mocha -r ts-node/register test/**/*.test.ts",
-    "test-cov": "nyc --reporter=text npm run test",
-    "test-cov:html": "nyc --reporter=text --reporter=html npm run test",
+    "test": "mocha --require tsx/cjs test/**/*.test.ts",
+    "test-cov": "c8 --reporter=text npm run test",
+    "test-cov:html": "c8 --reporter=text --reporter=html npm run test",
     "lint": "eslint . --ext .ts",
     "fmt": "eslint . --fix --ext .ts"
   },
@@ -38,11 +38,11 @@
     "eslint": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-promise": "latest",
+    "c8": "latest",
     "husky": "latest",
     "mocha": "latest",
     "nodemon": "latest",
-    "nyc": "latest",
-    "ts-node": "latest",
+    "tsx": "latest",
     "typescript": "latest"
   },
   "directories": {
